@@ -1,0 +1,7 @@
+export const SIGN_IN = 'SIGN_IN'
+export const SIGN_OUT = 'SIGN_OUT'
+
+export const GET_GEOLOCATION = 'GET_GEOLOCATION'
+export const GET_CURRENT_WEATHER = 'GET_CURRENT_WEATHER'
+
+export const GET_FORECAST = 'GET_FORECAST'
