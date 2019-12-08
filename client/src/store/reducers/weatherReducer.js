@@ -1,11 +1,11 @@
 import {GET_CURRENT_WEATHER} from '../actions/actionTypes'
-const inititalState = {
+const initialState = {
 	currentWeather: null,
 	loading: false,
 	error: false
 }
 
-const weatherReducer = (state = inititalState, action) => {
+const weatherReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case GET_CURRENT_WEATHER:
 			return {

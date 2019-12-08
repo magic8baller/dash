@@ -1,14 +1,22 @@
 import React from 'react';
 import Dashboard from './Dashboard'
+import Clock from './Clock'
 import Navbar from './Navbar'
-
-function App() {
+import Greeting from './Greeting'
+import Greeter from './Greeter'
+import {connect} from 'react-redux'
+function App(props) {
   return (
     <div>
-<Navbar/>
-<Dashboard/>
+			{props.name ? (<><Navbar />
+			<Clock />
+			<Greeting />
+			<Dashboard /></>) : <Greeter/>}
+
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({name: state.greeting.name})
+
+export default connect(mapStateToProps)(App);

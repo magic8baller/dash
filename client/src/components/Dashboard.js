@@ -20,5 +20,5 @@ this.props.getGeolocation()
   }
 
 }
-const mapStateToProps = state => ({position: state.position.coords, weather: state.weather.currentWeather})
+const mapStateToProps = state => ({position: state.position.coords})
 export default connect(mapStateToProps, {getGeolocation})(Dashboard)
